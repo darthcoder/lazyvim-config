@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 if vim.loop.os_uname().sysname == "Windows_NT" then
+  -- need to use 'nu -l' for terminal
   vim.opt.shell = "nu"
   vim.opt.shellcmdflag = "-c"
   vim.opt.shellredir = "2>&1 | save --raw %s"

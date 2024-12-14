@@ -80,11 +80,4 @@ return {
     lazy = false,
     priority = 1001,
   },
-  {
-    "zschreur/telescope-jj.nvim",
-    config = function()
-      local telescope = require("telescope")
-      telescope.load_extension("jj")
-    end,
-  },
 }
