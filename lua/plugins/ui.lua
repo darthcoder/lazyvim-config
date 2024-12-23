@@ -12,10 +12,13 @@ return {
     },
   },
 
+  { "NLKNguyen/papercolor-theme" },
+
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-frappe",
+      -- colorscheme = "catppuccin-frappe",
+      colorscheme = "papercolor-theme",
     },
   },
 }
