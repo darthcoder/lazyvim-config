@@ -15,4 +15,6 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
   -- else
   --   vim.opt.shell = "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
   -- end
+
+  vim.opt.laststatus = 3
 end
