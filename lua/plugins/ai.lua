@@ -6,20 +6,21 @@ return {
     version = false, -- set this to "*" if you want to always pull the latest change, false to update on release
     opts = {
       -- add any opts here
-      provider = "claude",
-      claude = {
-        api_key_name = { "op", "read", "op://Private/Anthropic API Key/credential" },
-      },
-      -- provider = "ollama",
-      -- vendors = {
-      --   ollama = {
-      --     __inherited_from = "openai",
-      --     api_key_name = "",
-      --     endpoint = "http://127.0.0.1:11434/v1",
-      --     model = "codegemma",
-      --   },
+      -- provider = "claude",
+      -- claude = {
+        -- TODO: Need to make the vault (Employee vs Private) depend on the machine
+        -- api_key_name = { "op", "read", "op://Private/Anthropic API Key/credential" },
       -- },
-    },
+      provider = "ollama",
+      vendors = {
+        ollama = {
+          __inherited_from = "openai",
+          api_key_name = "",
+          endpoint = "http://127.0.0.1:11434/v1",
+          model = "codegemma",
+        },
+      },
+   },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
     build = "make",
     -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows

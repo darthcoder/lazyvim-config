@@ -80,4 +80,6 @@ return {
     lazy = false,
     priority = 1001,
   },
+
+  { "mistweaverco/kulala.nvim", opts = {} },
 }
