@@ -81,5 +81,5 @@ return {
     priority = 1001,
   },
 
-  { "mistweaverco/kulala.nvim", opts = {} },
+  -- { "mistweaverco/kulala.nvim", opts = {} },
 }
