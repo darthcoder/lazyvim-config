@@ -1,25 +1,6 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    -- opts = {
-    --   ensure_installed = {
-    --     "bash",
-    --     "html",
-    --     "javascript",
-    --     "json",
-    --     "kotlin",
-    --     "lua",
-    --     "markdown",
-    --     "markdown_inline",
-    --     "python",
-    --     "query",
-    --     "regex",
-    --     "tsx",
-    --     "typescript",
-    --     "vim",
-    --     "yaml",
-    --   },
-    -- },
     config = function(_, opts)
       require("nvim-treesitter.configs").setup(opts)
       local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
@@ -58,7 +39,6 @@ return {
   },
 
   { "NoahTheDuke/vim-just" },
-  { "nvim-java/nvim-java" },
   { "folke/neoconf.nvim" },
 
   -- {
@@ -82,4 +62,15 @@ return {
   },
 
   -- { "mistweaverco/kulala.nvim", opts = {} },
+
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        ocamllsp = {
+          mason = false,
+        },
+      },
+    },
+  },
 }

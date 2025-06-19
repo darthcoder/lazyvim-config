@@ -18,3 +18,5 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
 
   vim.opt.laststatus = 3
 end
+
+vim.lsp.enable("ocamllsp")
