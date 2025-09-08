@@ -17,8 +17,22 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-frappe",
+      -- colorscheme = "catppuccin-frappe",
       -- colorscheme = "PaperColor",
+      -- colorscheme = "desert",
+      colorscheme = "tokyonight-storm",
     },
   },
+
+  -- TODO: LazyExtras
+  -- {
+  --   "echasnovski/mini.diff",
+  --   config = function()
+  --     local diff = require("mini.diff")
+  --     diff.setup({
+  --       -- Disabled by default
+  --       source = diff.gen_source.none(),
+  --     })
+  --   end,
+  -- },
 }
