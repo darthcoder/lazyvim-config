@@ -41,7 +41,9 @@ return {
       },
       strategies = {
         chat = {
-          adapter = "claude_code",
+          -- adapter = "claude_code",
+          adapter = "fuelix",
+          model = "claude-sonnet-4",
         },
         inline = {
           adapter = "fuelix",
