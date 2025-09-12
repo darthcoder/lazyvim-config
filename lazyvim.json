@@ -11,17 +11,24 @@
     "lazyvim.plugins.extras.editor.refactoring",
     "lazyvim.plugins.extras.editor.snacks_explorer",
     "lazyvim.plugins.extras.editor.snacks_picker",
+    "lazyvim.plugins.extras.lang.angular",
+    "lazyvim.plugins.extras.lang.docker",
+    "lazyvim.plugins.extras.lang.git",
     "lazyvim.plugins.extras.lang.nushell",
     "lazyvim.plugins.extras.lang.ocaml",
+    "lazyvim.plugins.extras.lang.omnisharp",
     "lazyvim.plugins.extras.lang.rust",
     "lazyvim.plugins.extras.lang.sql",
     "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.util.project"
+    "lazyvim.plugins.extras.util.mini-hipatterns",
+    "lazyvim.plugins.extras.util.project",
+    "lazyvim.plugins.extras.util.rest"
   ],
   "install_version": 7,
   "news": {
-    "NEWS.md": "11866"
+    "NEWS.md": "10960"
   },
   "version": 8
 }
