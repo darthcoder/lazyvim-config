@@ -12,7 +12,7 @@ return {
     dependencies = {
       "MunifTanjim/nui.nvim",
       "nvim-tree/nvim-web-devicons",
-      "echasnovski/mini.icons",
+      "nvim-mini/mini.icons",
     },
     config = function()
       require("hunk").setup()
