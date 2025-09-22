@@ -1,4 +1,5 @@
 return {
+  -- I'm not sure this is the right place for this plugin's config...
   {
     "stevearc/oil.nvim",
     opts = {},
