@@ -1,6 +1,14 @@
+vim.cmd([[cab cc CodeCompanion]])
+
 return {
   {
     "olimorris/codecompanion.nvim",
+    keys = {
+      { "<leader>Ci", "<cmd>CodeCompanion<cr>", desc = "CodeCompanion inline" },
+      { "<leader>CC", "<cmd>CodeCompanionChat Toggle<cr>", desc = "CodeCompanion toggle chat" },
+      { "<leader>CA", "<cmd>CodeCompanionChat Add<cr>", mode = { "v" }, desc = "CodeCompanion add context" },
+      { "<leader>Ca", "<cmd>CodeCompanionActions<cr>", desc = "CodeCompanion actions" },
+    },
     opts = {
       adapters = {
         acp = {
@@ -55,6 +63,15 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
       "ravitemer/mcphub.nvim",
+      {
+        "folke/which-key.nvim",
+        optional = true,
+        opts = {
+          spec = {
+            { "<leader>C", group = "Code Companion" },
+          },
+        },
+      },
     },
   },
 }

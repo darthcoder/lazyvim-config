@@ -68,9 +68,37 @@ return {
 
   {
     "GustavEikaas/easy-dotnet.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "folke/snacks.nvim" },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "folke/snacks.nvim",
+      {
+        "folke/which-key.nvim",
+        optional = true,
+        opts = {
+          spec = {
+            { "<leader>D", group = "Easy .NET" },
+            { "<leader>Dd", group = "Database/EF" },
+            { "<leader>Dp", group = "Packages" },
+          },
+        },
+      },
+    },
     config = function()
       require("easy-dotnet").setup()
     end,
+    keys = {
+      { "<leader>Db", "<cmd>Dotnet build<cr>", desc = "Build the solution" },
+      { "<leader>Dr", "<cmd>Dotnet run<cr>", desc = "Run the solution" },
+      { "<leader>Dx", "<cmd>Dotnet build quickfix<cr>", desc = "Build the solution and add errors to quickfix" },
+      { "<leader>Dv", "<cmd>Dotnet project view<cr>", desc = "View project info" },
+      { "<leader>Dt", "<cmd>Dotnet test<cr>", desc = "Run tests" },
+      { "<leader>DT", "<cmd>Dotnet testrunner<cr>", desc = "Show the test runner" },
+      { "<leader>DS", "<cmd>Dotnet solution select<cr>", desc = "Select the active solution" },
+      { "<leader>Dda", "<cmd>Dotnet ef migrations add<cr>", desc = "Add a migration" },
+      { "<leader>Ddu", "<cmd>Dotnet ef database update<cr>", desc = "Update the database" },
+      { "<leader>Ddl", "<cmd>Dotnet ef migrations list<cr>", desc = "List migrations" },
+      { "<leader>DD", "<cmd>Dotnet<cr>", desc = "Show actions" },
+      { "<leader>Dpa", "<cmd>Dotnet add package<cr>", desc = "Add a package" },
+    },
   },
 }

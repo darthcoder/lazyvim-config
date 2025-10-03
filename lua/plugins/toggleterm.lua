@@ -96,5 +96,16 @@ return {
       --   }
       -- }
     },
+    dependencies = {
+      {
+        "folke/which-key.nvim",
+        optional = true,
+        opts = {
+          spec = {
+            { "<leader>T", group = "ToggleTerm" },
+          },
+        },
+      },
+    },
   },
 }
