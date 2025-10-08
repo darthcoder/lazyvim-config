@@ -101,4 +101,15 @@ return {
       { "<leader>Npa", "<cmd>Dotnet add package<cr>", desc = "Add a package" },
     },
   },
+
+  { "nsidorenco/neotest-vstest" },
+  {
+    "nvim-neotest/neotest",
+    optional = true,
+    opts = {
+      adapters = {
+        ["nsidorenco/neotest-vstest"] = {},
+      },
+    },
+  },
 }
