@@ -69,6 +69,7 @@ return {
   {
     "GustavEikaas/easy-dotnet.nvim",
     dependencies = {
+      "nsidorenco/neotest-vstest",
       "nvim-lua/plenary.nvim",
       "folke/snacks.nvim",
       {
@@ -102,7 +103,9 @@ return {
     },
   },
 
-  { "nsidorenco/neotest-vstest" },
+  {
+    "nsidorenco/neotest-vstest",
+  },
   {
     "nvim-neotest/neotest",
     optional = true,
