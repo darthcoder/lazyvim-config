@@ -58,10 +58,10 @@ return {
         ocamllsp = {
           mason = false,
         },
-        omnisharp = {
-          -- copied from https://github.com/neovim/nvim-lspconfig/blob/master/lsp/omnisharp.lua#L20
-          -- so I can have it not look for csproj files.
-        },
+        -- omnisharp = {
+        --   -- copied from https://github.com/neovim/nvim-lspconfig/blob/master/lsp/omnisharp.lua#L20
+        --   -- so I can have it not look for csproj files.
+        -- },
       },
     },
   },
@@ -84,9 +84,14 @@ return {
         },
       },
     },
-    config = function()
-      require("easy-dotnet").setup()
-    end,
+    ft = { "cs", "fs", "sln", "csproj" },
+    opts = {
+      -- lsp = {
+      --   -- TODO: move this to project config
+      --   -- roslynator_enabled = false,
+      -- },
+      picker = "snacks",
+    },
     keys = {
       { "<leader>Nb", "<cmd>Dotnet build<cr>", desc = "Build the solution" },
       { "<leader>Nr", "<cmd>Dotnet run<cr>", desc = "Run the solution" },
