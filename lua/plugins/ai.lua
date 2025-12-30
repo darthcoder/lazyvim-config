@@ -17,7 +17,7 @@ return {
               env = {
                 ANTHROPIC_BASE_URL = "https://api.fuelix.ai",
                 ANTHROPIC_AUTH_TOKEN = "cmd:op --account my.1password.com read 'op://Private/tsadcgixxpof4yapxdrue2nzzi/credential' --no-newline",
-                ANTHROPIC_MODEL = "claude-sonnet-4",
+                ANTHROPIC_MODEL = "claude-sonnet-4-5",
               },
             })
           end,
@@ -45,13 +45,13 @@ return {
       -- },
       -- },
       opts = {
-        -- log_level = "TRACE",
+        log_level = "DEBUG",
       },
       strategies = {
         chat = {
-          -- adapter = "claude_code",
-          adapter = "fuelix",
-          model = "claude-sonnet-4",
+          adapter = "claude_code",
+          -- adapter = "fuelix",
+          model = "claude-sonnet-4-5",
         },
         inline = {
           adapter = "fuelix",
