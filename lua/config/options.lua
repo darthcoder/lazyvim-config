@@ -20,3 +20,5 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
 end
 
 vim.lsp.enable("ocamllsp")
+
+vim.opt.relativenumber = false
